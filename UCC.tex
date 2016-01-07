@@ -1,0 +1,114 @@
+\documentclass{beamer}
+\usetheme{Cork}
+
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{caveat}[theorem]{Caveat}
+\newtheorem{rmcorollary}[theorem]{Corollary}
+
+\begin{document}
+
+\title{A Beamer Theme For The Real Capital}
+\author[M.Coughlan]{Michael Coughlan}
+\institute[MACSI]{University College Cork}
+\date[INPNBD'08]{The 35th Annual Conference of the \\
+International Network of People with Nothing Better To Do}
+
+\frame{
+  \titlepage
+}
+
+\begin{frame}
+   \frametitle{The UCC Beamer Theme}
+
+\uncover<1->{\begin{definition}
+\textit{UCC} is a simple beamer theme for creating presentations
+using the UCC colours and logo.
+\end{definition}}
+
+\uncover<2->{\begin{remark}
+It is based on the manbeamer template used in the University of Manchester, created by Mark Kambites. The manbeamer template, and this one, uses the Boadilla theme, designed by Manual Carro, which is
+distributed with Beamer.
+\end{remark}}
+
+\uncover<3->{
+\begin{remark}
+As you can see, the default style is quite minimal, showing only
+the speaker/author's name, title, UCC logo and slide number.
+\end{remark}}
+
+\uncover<4->{\begin{remark}
+As with Boadilla, the option \textrm{\texttt{secheader}} adds a bar at the top
+showing the section and subsection titles.
+\end{remark}}
+\end{frame}
+
+\begin{frame}
+   \frametitle{Disclaimer}
+\uncover<1->{
+\begin{caveat}
+This template was modified from the manbeamer template used in the University of Manchester, created by Mark Kambites. I've gotten his permission for distribution.
+\end{caveat}
+}
+\uncover<2->{
+\begin{caveat}
+I only made four major changes: the colour scheme has been changed to UCC's black and red; the UCC logo has replaced the Manchester logo; the theme has been changed from rose to seagull and the names of the files have been altered.
+\end{caveat}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Downside}
+
+\uncover<1->{
+\begin{caveat}
+The theme is still very much experimental, and used at your own risk. I
+take no responsibility if it makes an eejit of you in front of all the
+leading experts in your field. Besides, you should be well used to this already.
+\end{caveat}
+}
+
+\uncover<2->{
+\begin{rmcorollary}
+Feedback is welcome!
+\end{rmcorollary}
+}
+
+\uncover<3->{
+\begin{caveat}
+I'm not sure how the UCC logo is going to look at different sizes/resolutions. Its a work in progress.
+\end{caveat}
+}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+   \frametitle{Installation and Usage}
+\begin{enumerate}
+\item<1-> Download the files
+\begin{itemize}
+\item \texttt{beamerthememacsi.sty}
+\item \texttt{lMACSI.jpg}
+\item \texttt{MACSI.tex}
+\end{itemize}
+from somewhere, if we decide to distribute it.
+
+\item<2-> Save them somewhere in your \TeX \ path (or if you don't know
+what that means, in the directory where you will put your
+presentation).
+
+\item<3-> Create your presentation (eg.~by modifying \texttt{UCC.tex}).
+
+\item<4-> Process it with \texttt{pdflatex}.
+
+\item<5-> If it doesn't look right, go to (3).
+
+\item<6-> Give an hilarious but informative talk with a great template.
+
+\item<7-> Send feedback to \texttt{Daniel.Riordan@umail.ucc.ie}.
+\end{enumerate}
+\end{frame}
+
+\end{document}
